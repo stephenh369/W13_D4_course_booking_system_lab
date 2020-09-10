@@ -37,4 +37,10 @@ public class CourseController {
         courseRepository.save(course);
         return new ResponseEntity<>(course, HttpStatus.CREATED);
     }
+
+    @PutMapping(value = "/courses/{id}")
+    public ResponseEntity<Course> updateCourse(@RequestBody Course course, @PathVariable long id) {
+        courseRepository.save(course);
+        return new ResponseEntity<>(course, HttpStatus.CREATED);
+    }
 }
