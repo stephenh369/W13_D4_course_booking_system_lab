@@ -37,4 +37,10 @@ CustomerController {
         customerRepository.save(customer);
         return new ResponseEntity<>(customer, HttpStatus.CREATED);
     }
+
+    @PutMapping(value = "/customers/{id}")
+    public ResponseEntity<Customer> updateCustomer(@RequestBody Customer customer, @PathVariable long id) {
+        customerRepository.save(customer);
+        return new ResponseEntity<>(customer, HttpStatus.CREATED);
+    }
 }
