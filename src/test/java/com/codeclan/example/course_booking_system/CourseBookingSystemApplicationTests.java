@@ -41,4 +41,10 @@ class CourseBookingSystemApplicationTests {
 		assertEquals(1, found.size());
 	}
 
+	@Test
+	void canFindByCustomerName() {
+		List<Course> found = courseRepository.findByBookingsCustomerName("Stephen Herd");
+		assertEquals(1, found.size());
+	}
+
 }
