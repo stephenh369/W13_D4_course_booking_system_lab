@@ -34,6 +34,10 @@ public class Booking {
     public Booking() {
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public String getDate() {
         return date;
     }

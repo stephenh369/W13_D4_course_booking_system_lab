@@ -37,6 +37,10 @@ public class Course {
     public Course() {
     }
 
+    public Long getId() {
+        return id;
+    }
+
     public String getName() {
         return name;
     }
